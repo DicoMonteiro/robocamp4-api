@@ -7,7 +7,7 @@ Resource    ../../resources/services.robot
 Request Token
     ${resp}=          Post Token        papito@ninjapixel.com       pwd123
 
-    Status Should Be    200    ${resp}
+    Status Should Be    202    ${resp}
 
 Incorrect password
     ${resp}=          Post Token        papito@ninjapixel.com       acb123
